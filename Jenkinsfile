@@ -1,9 +1,9 @@
 pipeline {
  agent any
   stages {
-     stage ("Build") {
+     stage ("Build mvn") {
       steps {
-       sh  "echo from git"
+       sh  "mvn clean install"
       }
      }
   }
